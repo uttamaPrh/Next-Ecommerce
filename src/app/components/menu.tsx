@@ -1,13 +1,13 @@
-"use client"
-import Link from 'next/link'
-import React, { useState } from 'react'
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
 
 const menu = () => {
-    const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   return (
     <div>
       <img
-      className='cursor-pointer'
+        className="cursor-pointer"
         src="./menu.png"
         width={28}
         height={28}
@@ -15,7 +15,7 @@ const menu = () => {
         onClick={() => setOpen((prev) => !prev)}
       />
       {open && (
-        <div className='flex flex-col text-red-700'>
+        <div className=" z-10 flex flex-col items-center justify-center gap-8 text-red-700 absolute bg-black text-white left-0 top-20 w-full h-[calc(100vh-80px)]">
           <Link href="/">Home</Link>
           <Link href="/">Home</Link>
           <Link href="/">Home</Link>
@@ -24,6 +24,6 @@ const menu = () => {
       )}
     </div>
   );
-}
+};
 
-export default menu
+export default menu;
