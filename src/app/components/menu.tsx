@@ -16,10 +16,11 @@ const menu = () => {
       />
       {open && (
         <div className=" z-10 flex flex-col items-center justify-center gap-8 text-red-700 absolute bg-black text-white left-0 top-20 w-full h-[calc(100vh-80px)]">
-          <Link href="/">Home</Link>
-          <Link href="/">Home</Link>
-          <Link href="/">Home</Link>
-          <Link href="/">Home</Link>
+          <Link href="/">Home Page</Link>
+          <Link href="/">Shop</Link>
+          <Link href="/">Deals</Link>
+          <Link href="/">About</Link>
+          <Link href="/">Contact</Link>
         </div>
       )}
     </div>
